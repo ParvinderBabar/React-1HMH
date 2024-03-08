@@ -45,8 +45,11 @@ export default function Home() {
     
               <h6>{planet.name}</h6>
               <p>{planet.name} is
-                {planet.distanceFromEarth} miles from earth.{planet.name} is believed to has life {planet.hasLife}.
-                the atmosphere of {planet.name} is {planet.atmosphere}.
+                {planet.distanceFromEarth} miles from earth.
+                {planet.name} is believed to
+                 {planet.hasLife ? " has life." : " have no life."}
+                The atmosphere of {planet.name}
+                is {planet.atmosphere}.
               </p>
             </div>
           </div>);
@@ -58,33 +61,3 @@ export default function Home() {
       </div >);
 
 }
-//  const [dragons, setDragons] = useState(defaultDragons);
-//   console.log(defaultDragons);
-
-//   return (
-//     <div>
-//       <h1>Dragons</h1>
-//       {
-//         dragons.map((dragon) => {
-//           console.log(dragon);
-//           return (
-//             <div>
-//               <div key={dragon.id} className="dragon-container">
-//                 <p>{dragon.id}</p>
-//                 <h2>{dragon.name}</h2>
-//                 <p>{dragon.emoji}</p>
-//                 <p>{dragon.color}</p>
-//                 <p>{dragon.size}</p>
-//                 <p>{dragon.ability}</p>
-//                 <p>{dragon.habitat}</p>
-//                 <p>{dragon.age}</p>
-
-//               </div>
-//               <Divider />
-//             </div>
-//           );
-     
-    
-//         })}
-//     </div>  
-// )};
